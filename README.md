@@ -1,30 +1,74 @@
-Netflix ELT Pipeline: S3 + Snowflake + dbt
-Project Overview
-An end-to-end Data Engineering project demonstrating a Modern Data Stack (MDS) architecture. It automates the flow of Netflix dataset from raw CSV files into a production-ready analytics warehouse.
+# 🎬 Netflix ELT Pipeline: S3 + Snowflake + dbt
 
-Pipeline Architecture
-Extract & Load (EL): Raw Netflix CSV data is ingested into Amazon S3 and then loaded into Snowflake (Raw Layer) using storage integrations.
+## 📌 Project Overview
+This project demonstrates an end-to-end **Data Engineering pipeline** using a **Modern Data Stack (MDS)** architecture.  
 
-Transform (T): Data transformation is managed by dbt, following a multi-layered modeling approach:
+It automates the flow of Netflix dataset from raw CSV files into a **production-ready analytics warehouse**, enabling efficient data transformation and reporting.
 
-Staging Layer: Data cleaning, type casting, and renaming.
+---
 
-Serving Layer: Final business logic and aggregations for reporting.
+## 🏗️ Pipeline Architecture
 
-Analytics: The refined data is connected to Looker Studio/Power BI for visual insights and trend analysis.
+### 🔹 Extract & Load (EL)
+- Raw Netflix CSV data is ingested into **Amazon S3**
+- Data is then loaded into **Snowflake (Raw Layer)**
+- Uses **Snowflake Storage Integrations** for secure and scalable data loading
 
-Tech Stack
-Storage: Amazon S3
+---
 
-Data Warehouse: Snowflake
+### 🔹 Transform (T)
+Data transformation is handled using **dbt (Data Build Tool)** with a multi-layered approach:
 
-Transformation: dbt (Data Build Tool)
+#### 🧱 Staging Layer
+- Data cleaning  
+- Type casting  
+- Column renaming  
 
-BI Tools: Power BI / Tableau / Looker
+#### 📊 Serving Layer
+- Business logic implementation  
+- Aggregations for reporting  
+- Optimized datasets for analytics  
 
-Key Features
-Modular SQL: Clean, reusable code using dbt models.
+---
 
-Environment Isolation: Separate Dev and Production databases.
+### 🔹 Analytics
+- Final transformed data is connected to BI tools:
+  - Power BI  
+  - Tableau  
+  - Looker Studio  
+- Used for **data visualization, dashboards, and trend analysis**
 
-Data Quality: Automated schema and integrity testing via dbt.
+---
+
+## 🛠️ Tech Stack
+
+| Category            | Tools Used                  |
+|--------------------|---------------------------|
+| Storage            | Amazon S3                 |
+| Data Warehouse     | Snowflake                 |
+| Transformation     | dbt                       |
+| BI Tools           | Power BI, Tableau, Looker |
+
+---
+
+## 🚀 Key Features
+
+- ✅ **Modular SQL**  
+  - Clean, reusable, and scalable dbt models  
+
+- ✅ **Environment Isolation**  
+  - Separate Development and Production environments  
+
+- ✅ **Data Quality & Testing**  
+  - Automated schema validation  
+  - Integrity checks using dbt tests  
+
+---
+
+## 📈 Use Cases
+- Data pipeline automation  
+- Business intelligence reporting  
+- Trend analysis on streaming content  
+
+---
+
