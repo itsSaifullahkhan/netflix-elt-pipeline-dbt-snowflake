@@ -324,18 +324,8 @@ These tables can be connected to BI tools for dashboarding and reporting.
 ## Screenshots
 
 ### Architecture Diagram
-![Architecture Diagram](imgs/Screenshot 2025-09-10 042101.png)
+![Architecture Diagram](imgs/Architecture.png)
 
-Recommended screenshots to include:
-
-* AWS S3 bucket with raw CSV file
-* Snowflake raw table
-* dbt model run success
-* dbt test success
-* Final transformed tables
-* BI dashboard preview
-
----
 
 ## Challenges Faced
 
